@@ -1,0 +1,245 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1859,2075</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="664,2010" sap2010:WorkflowViewState.IdRef="Sequence_16">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: RPA Stock Market" sap:VirtualizedContainerService.HintSize="602,1899" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="cd55e4dc-43b1-443b-b8ca-552f50f16479" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1681" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item '----- Select -----'" sap:VirtualizedContainerService.HintSize="506,158" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Exenon UI Pharma." ScopeIdentifier="cd55e4dc-43b1-443b-b8ca-552f50f16479" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="4">
+                  <x:String>----- Select -----</x:String>
+                  <x:String>Exenon UI Pharma.</x:String>
+                  <x:String>WEX Academy Inc.</x:String>
+                  <x:String>Exxon RPA Corp.</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/assets/rpaStockMarket/index.html" DesignTimeRectangle="59, 452, 192, 26" DesignTimeScaleFactor="1.2000000476837158" ElementType="DropDown" FriendlyName="'----- Select -----'" FullSelectorArgument="&lt;webctrl id='country' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='country' tag='SELECT' type='' class='' aaname='' /&gt;" Guid="e862f184-62d5-483d-a3ad-74dec13b1923" InformativeScreenshot="2d2e0514700242a3ef4b01dbb85816c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RPA Stock Market' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="506,1368" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_2" NumberOfTimes="1000000" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,1209" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="price" />
+                      <Variable x:TypeArguments="x:Int32" Name="inprice" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text '69.2'" sap:VirtualizedContainerService.HintSize="410,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="cd55e4dc-43b1-443b-b8ca-552f50f16479" TextString="[price]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/assets/rpaStockMarket/index.html" CvTextArgument="70.3" CvType="AnyWordGroup" DesignTimeRectangle="308, 575, 135, 60" DesignTimeScaleFactor="1.2000000476837158" ElementType="Text" FriendlyName="'69.2'" FullSelectorArgument="&lt;webctrl id='cnt' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cnt' tag='SPAN' type='' class='' /&gt;" Guid="50ca24d9-52ca-46a3-a881-6ca9689eabcc" InformativeScreenshot="ca9ee82151fd6e4a77a3150926fe6c10.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='RPA Stock Market' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <If Condition="[CInt(price) &lt; 74]" sap:VirtualizedContainerService.HintSize="410,330" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[price.ToString()]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[CInt(price) &lt; 70]" sap:VirtualizedContainerService.HintSize="410,526" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,375" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;Current price is: &quot; &amp; price.ToString]" />
+                          <ui:Break sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Break_2" />
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[string.Format(&quot;&quot;&quot;End&quot;&quot;&quot;)]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+            </ui:RepeatNumberOfTimesX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-3851, -1167, 3862, 2110" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="41f76844ab8353ee6c437beddf8a6fe0.jpg" Selector="&lt;html app='chrome.exe' title='RPA Stock Market' /&gt;" Title="One Pager - BPM sevilla - Is LLM - Second-Brain-Obsidian - Obsid*" Url="https://rpachallenge.com/assets/rpaStockMarket/index.html" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
