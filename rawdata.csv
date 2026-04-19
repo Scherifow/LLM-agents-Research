@@ -1,0 +1,38 @@
+﻿RPA P1,RPA P1 Result,RPA P2 ,RPA P2 Result,RPA P3 full,RPA P3 simple for agent,RPA P3 Result,Agent P1,Agent P1 Result,Agent P2,Agent P2 Result,Agent P3,Agent P3 Result,AgentP3,Agent P3 Result full run
+145,Success,53,Success,51,19,Success,3600,Failed,77,Success,181,Successful,-,"Failed stoped after 10 minutes - Full run try, not even close"
+138,Success,56,Success,50,22,Success,,,79,Success,173,Successful,-,"Failed stoped after 10 minutes - Full run try, not even close"
+137,Success,53,Success,52,20,Success,,,88,Success,-,Failed stoped after 10 minutes - Filled only 3 rows,-,"Failed stoped after 10 minutes - Full run try, not even close"
+138,Success,53,Success,52,22,Success,,,-,Failed Ended after 10 minutes,241,Successful,,
+136,Success,53,Success,53,18,Success,,,232,Success after 3 minutes recover,192,Successful,,
+139,Success,53,Success,51,17,Success,,,90,Success,208,Successful,,
+137,Success,55,Success,50,24,Success,,,87,Success,222,Successful,,
+138,Success,55,Success,49,17,Success,,,83,Success,-,Failed stoped after 10 minutes - Filled only 3 rows,,
+137,Success,55,Success,49,20,Success,,,122,Success,-,Failed stoped after 10 minutes - Filled only 3 rows,,
+153,Success,53,Success,50,21,Success,,,130,Success,-,Failed stoped after 10 minutes - Filled only 3 rows,,
+139.8,,53.9,,50.7,20,,,,109.7777778,,202.8333333,,,
+,,,,,,,,,,,,,,
+Dev time 40 minutes,,Dev time 38 minutes,,,,"Dev time 4 hours
+1h study how to use OCR in UiPath effectivly.  
+1h fixing and matching the desired output",,"Agent is not capable handling that long process. 
+
+At least not in the same setting that was tested. 
+
+Run of the process was sliced by one record in excel.",,The development time was 5 minutes the prompt that lead to fullfilling the desired output was succesful on second try.,,"First 3 rows where quite fast around 150 second
+Many runs get stucked on 3 rows the 4th was on the way open the invoice, get it right the data, but do not write them into the csv and then stucked in the reconnetion loop.",,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,RPA P2 ,Agent P2,RPA P3 simple for agent,Agent P3,,,,,Technology,,,,
+,,53,77,19,181,,,,Process,RPA success,Agent success,RPA Success,Agent fail,
+,,56,79,22,173,,,,P2,10,9,0,1,
+,,53,88,20,241,,,,P3,10,6,0,4,
+,,53,232,22,192,,,,,,,,,
+,,53,90,18,208,,,,,,,,,
+,,53,87,17,222,,,,,,,,,
+,,55,83,24,,,,,,,,,,
+,,55,122,17,,,,,,,,,,
+,,55,130,20,,,,,,,,,,
+,,53,,21,,,,,,,,,,
